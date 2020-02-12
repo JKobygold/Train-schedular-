@@ -69,20 +69,20 @@ var database = firebase.database();
     console.log(frequency);
   
     
-    var FreqConv = moment(trainOne, "HH:mm").subtract(1, "hours");
+    // var FreqConv = moment(trainOne, "HH:mm").subtract(1, "hours");
 
-    console.log(FreqConv);
+    // console.log(FreqConv);
 
  
     var newRow = $("<tr>").append(
       $("<td>").text(name),
       $("<td>").text(destination),
-      $("<td>").text(trainOne),
+      $('<td>').text(trainOne),
       $("<td>").text(frequency),
-      $("<td>").text(minAway),
+      // $("<td>").text(minAway),
     );
   
-  //   // Append the new row to the table
+  
     $("#train-table > tbody").append(newRow);
   });
 
